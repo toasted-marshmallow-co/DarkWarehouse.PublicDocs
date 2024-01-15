@@ -42,7 +42,7 @@ Should you need to add anything to an image to emphasise a point or highlight a 
 - **Dark Mode** 🌙: Since the application is called DarkWarehouse, it makes sense that dark mode and dark mode screenshots are the default.
 
 ### Diagrams
-- **Creation** 🛠️: When creating diagrams that showcase the elements of the system (i.e. racking, Omni-Moles, VTUs, etc.), please use [the provided PowerPoint file](./assets/DarkWarehouse Assets.pptx) for creating diagrams. This ensures consistency and source control.
+- **Creation** 🛠️: When creating diagrams that showcase the elements of the system (i.e. racking, Omni-Moles, VTUs, etc.), please use the provided PowerPoint file for creating diagrams (It can be found at: /assets/DarkWarehouse Assets.pptx). This ensures consistency and source control.
 - **Incorporation** 📊: Screenshot the diagram from PowerPoint that you create and include it in the documentation.
 
 ## Contributing to the Documentation 🤝
