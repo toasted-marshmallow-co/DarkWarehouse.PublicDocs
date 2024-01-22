@@ -17,6 +17,8 @@ Continue reading 📖 to learn more about the basics 🚀 and where, as a system
 The toolbar is available through the toolbar icon in the top left of the screen. When clicked, it expands the toolbar menu, this can be expanded and retracted at any time.
 
 ![Toolbar Location](assets/system-view-toolbar-001.png)
+![Toolbar Location](assets/system-view-toolbar-002.png)
+
 
 The toolbar exposes basic functionality of the management system in an easy-to-access location.
 
