@@ -40,13 +40,13 @@ Allowing an OmniMole to move pallets can be done done by right-clicking the mole
 ### VTUs
 
 When an VTU is allowed to move pallets, it will have no indicator. This can be seen below. \
-![Allowed Moving Pallets VTU](assets/VTU-online-diagram.png)
+![Allowed Moving Pallets VTU](assets/vtu-online-diagram.png)
 
 Disallowing an VTU from moving pallets can be done done by right-clicking the VTU and pressing "Disallow pallet movement".
 ![Disallow Pallet Movement Toggle VTU](assets/vtu-disallow-moving-pallets-toggle-full-system.png)
 
 When an VTU is not allowed to move pallets, it will have no indicator. This can be seen below. \
-![Disallowed Moving Pallets VTU](assets/VTU-online-diagram.png)
+![Disallowed Moving Pallets VTU](assets/vtu-online-diagram.png)
 
 Allowing an VTU to move pallets can be done done by right-clicking the VTU and pressing "Allow pallet movement".
 ![Allow Pallet Movement Toggle VTU](assets/vtu-allow-moving-pallets-toggle-full-system.png)
