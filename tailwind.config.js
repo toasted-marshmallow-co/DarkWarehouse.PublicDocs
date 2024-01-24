@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx,md,mdx}", "./docs/**/*.{md,mdx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Segoe UI", "...defaultTailwindFonts"],
+      },
+    },
   },
   plugins: [],
   darkMode: ["class", '[data-theme="dark"]'],
