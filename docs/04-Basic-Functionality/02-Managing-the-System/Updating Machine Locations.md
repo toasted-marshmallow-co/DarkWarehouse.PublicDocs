@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Updating Machine Locations 🌍
+# Updating Machine Locations
 
 This section deals with the tools available for updating machine locations throughout a system. 🛠️
 
@@ -62,15 +62,16 @@ An alternative method to complete the same task, depending on what the operator 
 ![Tools menu update machine location](assets/systems-view-tools-menu-traffic-machines.png)
 
 4. Follow the steps presented by the form:
+
    1. Select a machine. This can be done either by opening the machine table using the `Select Machine` button or by clicking the machine on the canvas. 🖼️
 
-![Tools menu update location form select machine](assets/systems-view-tools-menu-traffic-machines-select.png)
-![Tools menu update location form select machine modal](assets/systems-view-tools-menu-traffic-machines-select-modal.png)
+    ![Tools menu update location form select machine](assets/systems-view-tools-menu-traffic-machines-select.png)
+    ![Tools menu update location form select machine modal](assets/systems-view-tools-menu-traffic-machines-select-modal.png)
 
    2. Select a valid location following the same process as step one. Remember, OmniMoles can only be updated to Lanes, Vtus, and Aisles. 🗺️
 
-![Tools menu update location form select location](assets/systems-view-tools-menu-traffic-machines-select-location.png)
-![Tools menu update location form select location modal](assets/systems-view-tools-menu-traffic-machines-select-location-modal.png)
+    ![Tools menu update location form select location](assets/systems-view-tools-menu-traffic-machines-select-location.png)
+    ![Tools menu update location form select location modal](assets/systems-view-tools-menu-traffic-machines-select-location-modal.png)
 
 5. Complete the process by clicking the `Update` button. ✅
 
@@ -85,7 +86,7 @@ For example:
 
 :::note
 
-A Vtu can only be updated to Vtu Lanes. 🛣️
+A Vtu can only be updated to Vtu Lanes.
 
 :::
 

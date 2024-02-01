@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This section deals with the basic management of the fleet for a given instance. The management includes the creation of machines, deletion, and - of course - the updating of machine static data (excluding a machine's placement location). 🛠️
 
-:::note
+:::tip
 The __fleet__ comprises all of the pallet transport machines in the system and includes the OmniMoles and Vtus. 🌐
 :::
 
@@ -32,17 +32,20 @@ Regardless of the reason, creating an OmniMole involves the following steps.
 
 2. With the drawer open the operator can open the create menu for the current system. 
 
+![Tms Tools](assets/tms-view-tools-create.png)
+
 
 3. With the create menu open, the operator can then open the __Machine__ specific create menu by selecting the appropriate window.
 
 ![Create Menu](assets/tms-view-rhs-menu-machines.png)
-![Create Machine](assets/tms-menu-machine-props.png)
 
 4. From here, the operator is required to populate the machine data and to select a location for the machine. Depending on the machine type the operator has selected the operator can click on various location entities in order to place the machine into the system.  The location can be selected by double clicking on any location position on the canvas (apart from Vtu Lanes in the case of OmniMoles). The location can be updated later so it's not imperative that the location is the current position of the machine although it does help.
 
+![Create Machine](assets/tms-menu-machine-props.png)
+![New Location](assets/tms-view-create-machine.png)
+
 5. Once a location has been selected the operator can go ahead and click the create machine button at the bottom of the create machine menu. If all the inputs have been correctly populated the machine should appear and the create operation has been successful. ✔️
 
-![New Location](assets/tms-view-create-machine.png)
 
 ### Edit ✏️
 
@@ -116,19 +119,19 @@ Creating a Vtu in the database is necessary on few occasions. The process follow
 
 The operator can follow the steps illustrated above in order to open the create machines menu. 
 
-![Create VTU Menu](assets/tms-view-rhs-menu-machines-dropdown.png)
-
 1. Once the machines view is open the operator can select __Vtu__ from the machines dropdown. 
+
+![Create VTU Menu](assets/tms-view-rhs-menu-machines-dropdown.png)
 
 2. After the Vtu has been selected for the machine creation operation an additional section will appear at the bottom of the form. Here, the operator will need to specify additional settings for the Vtu such as the Rfid Tag, the Vtu's length, etc.
 
-:::note
+:::tip
 Vtus can only be placed on Vtu-Lanes (as opposed to Aisles, and Lanes.)
 :::
 
-![Create VTU Confirmation](assets/tms-view-rhs-menu-create-vtu.png)
-
 3. When the form has been populated as desired the operator can complete the process by clicking `Create Machine`. ✔️
+
+![Create VTU Confirmation](assets/tms-view-rhs-menu-create-vtu.png)
 
 ### Edit ✏️
 
