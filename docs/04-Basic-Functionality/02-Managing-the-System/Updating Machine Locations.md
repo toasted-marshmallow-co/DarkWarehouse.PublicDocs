@@ -16,7 +16,9 @@ Not all machine types can have their locations updated - only Omni-Moles and Vtu
 The Omni-Mole location can be updated for any number of reasons. 
 
 :::warning
+
 Updating the Omni-Mole location in the system will not result in the physical machine's location updating in real life. 🌐 In order to do this, the operator would need to create a __Machine Task__. 📝 Updating the Omni-Mole location will result in the data stored within the database being updated to reflect the operator's changes. 💾
+
 :::
 
 In order to update the Omni-Mole's location, the operator can follow these steps:
@@ -39,17 +41,17 @@ Ensure the __cursor__ is in `Select Singular` mode. ✅
 
 3. Right-click on the machine once it's been located. This will trigger the context menu to appear. 🖱️
 
-![Omni-Mole Context](assets/raw/systems-view-Omni-Mole-context-raw.png)
+![Omni-Mole Context](assets/raw/systems-view-omnimole-context-raw.png)
 
 4. Select `Update Location` in the context menu. 📌
 
-![Update Location](assets/systems-view-Omni-Mole-context.png)
+![Update Location](assets/systems-view-omnimole-context.png)
 
 5. At this point, the user can either update the machine to a specified location, or to be 'Outside the system'. If the user opts for the latter, step 1 can be safely ignored. 🌐
    
-![Update Location Context](assets/systems-view-Omni-Mole-context-update-location.png)
-![Update Location Success](assets/systems-view-Omni-Mole-context-update-location-success.png)
-
+![Update Location Context](assets/systems-view-omnimole-context-update-location.png)
+![Update Location Success](assets/systems-view-omnimole-context-update-location-success.png)
+                                                   
 An alternative method to complete the same task, depending on what the operator prefers:
 
 1. Open the tools menu on the left-hand side of the screen. 🧰
