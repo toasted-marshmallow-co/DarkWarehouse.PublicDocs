@@ -38,7 +38,7 @@ Clicking on a pin reveals a detailed notification card. This is where you'll fin
 - **Timestamp (🔵)**: Indicates when the notification was created.
 - **Expiry Time (🔴)**: Displays the time left before the notification expires.
 - **Description (🟢)**: Provides a brief summary of the event or alert.
-- **Acknowledgement Button (🔘)**: The button to press confirming you've seen and addressed the alert.
+- **Acknowledgement Button (⚪️)**: The button to press confirming you've seen and addressed the alert.
 - **Actionable Responses (🟣)**: Provides a brief summary of the event or alert.
 
 ![Notification Card](assets/notifications-card-information-section-expanded-sections-sections.png "Notification Card")
