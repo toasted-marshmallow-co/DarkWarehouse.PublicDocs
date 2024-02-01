@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Managing the Fleet 🚀
+# Managing the Fleet
 
 This section deals with the basic management of the fleet for a given instance. The management includes the creation of machines, deletion, and - of course - the updating of machine static data (excluding a machine's placement location). 🛠️
 
