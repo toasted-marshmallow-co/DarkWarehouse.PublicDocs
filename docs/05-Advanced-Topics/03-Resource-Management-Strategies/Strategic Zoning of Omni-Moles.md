@@ -13,7 +13,7 @@ The Free Roaming Strategy allows Omni-Moles to move throughout the store. The ef
 ### Benefits👍
 
 - Since all Omni-Moles share a zone, one Omni-Mole failing cannot not block out an entire level of the store. This reduces the number of points of failure in the system.
-- By having the Omni-Mole travel with the pallet up a VTU it allows the pallet to be immidiately take out of the VTU. This reduces the time the VTU us used by a task.
+- By having the Omni-Mole travel with the pallet up a VTU it allows the pallet to be immediately take out of the VTU. This reduces the time the VTU us used by a task.
 - Can have Omni-Moles covering multiple levels, so a system can have less Omni-Moles than levels.
 - Retrieve/Deposit interlocks are slower than Drive-In/Drive-Out interlocks
 
@@ -25,7 +25,7 @@ The Free Roaming Strategy allows Omni-Moles to move throughout the store. The ef
 ### When To Use👍
 
 - There are fewer Omni-Moles in the system than levels
-- When concerned about Omni-Moles failing and causing an entire level becoming inaccessable
+- When concerned about Omni-Moles failing and causing an entire level becoming inaccessible
 - When there are few VTUs in the system, using this strategy reduces the amount of time they are used.
 
 ### When Not To Use👎
@@ -64,14 +64,14 @@ The Hand-Off Strategy limits Omni-Moles to a single level. The effect is that an
 ### Disadvantages👎
 
 - Pallets on VTUs will need to wait for another Omni-Mole to fetch the pallet. This leads to VTUs being used by a single task for longer periods of time
-- If one Omni-Mole fails it can lead to an entire level becoming inaccessable unless there is another Omni-Mole on that level
+- If one Omni-Mole fails it can lead to an entire level becoming inaccessible unless there is another Omni-Mole on that level
 - If most movement occur between two levels, some Omni-Moles may not be performing any tasks
 - Retrieve/Deposit interlocks are slower than Drive-In/Drive-Out interlocks
 
 ### When To Use👍
 
 - There are more Omni-Moles in the system than levels (Preferably at least two per level)
-- When concerned about interlocks failing since fewer interlocks are invloved in a hand-off
+- When concerned about interlocks failing since fewer interlocks are involved in a hand-off
 - When there are lots of VTUs in a system
 
 ### When Not To Use👎
@@ -91,13 +91,16 @@ Level 1           |  Level 2
 :-------------------------:|:-------------------------:
 ![](assets/level-1-zone.png)  |  ![](assets/level-2-no-zone.png)
 
-Level 1 and the vtu lanes on level 2 are inside the zone
+Level 1 and the VTU lanes on level 2 are inside the zone
 
 #### Omni-Mole 2
 Level 1           |  Level 2
 :-------------------------:|:-------------------------:
 ![](assets/level-1-no-zone.png)  |  ![](assets/level-2-zone.png)
 
-Level 2 and the vtu lanes on level 1 are inside the zone 
+Level 2 and the VTU lanes on level 1 are inside the zone 
 
 This setup allows one Omni-Mole to deposit in the VTU and another to retrieve on a different level.
+
+## Hybrid
+It is possible to combine the Free Roaming and Handoff strategy to get the best out of the system. By having Omni-Moles free roam over a subset of the levels but handoff to other Omni-Moles on a different set of levels. This allows multiple Omni-Moles to be on the same level without wasting resources when that level is not in use.

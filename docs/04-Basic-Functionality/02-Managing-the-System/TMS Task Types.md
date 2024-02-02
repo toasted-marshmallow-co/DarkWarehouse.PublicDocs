@@ -40,11 +40,17 @@ An Error Reset Task is used to reset any error on the machine.
 2) Go to Manage Traffic -> TMS Tasks -> Machine Inquiry
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-no-movement-task-000.png)
 
+Alternatively right click a machine -> Create Machine Task -> Inquiry Task
+![Toolbar Location](assets/tms-tasks/tms-tasks-create-no-movement-task-000-1.png)
+
 3) Select a machine. Click next.
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-no-movement-task-001.png)
 
 4) Select a task type. Click create.
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-no-movement-task-002.png)
+
+To quickly create a Live Status Task, Right click a machine -> Request a Status Update
+![Toolbar Location](assets/tms-tasks/tms-tasks-create-no-movement-task-000-2.png)
 
 ## Generic Tasks🛣️
 Generic Tasks are used to move a machine to a new location.
@@ -75,6 +81,9 @@ A Go To Charger Task will send an Omni-Mole to the nearest available charger.
 
 2) Go to Manage Traffic -> TMS Tasks -> Machine Movement
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-generic-task-000.png)
+
+Alternatively right click a machine -> Create Machine Task -> Generic Movement Task (Or a specific task type)
+![Toolbar Location](assets/tms-tasks/tms-tasks-create-generic-task-000-1.png)
 
 3) Select a machine. Click next.
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-generic-task-001.png)
@@ -137,6 +146,9 @@ An Outbound Task is created to move the out of the store.
 2) Go to Manage Traffic -> TMS Tasks -> Pallet Movement
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-pallet-task-000.png)
 
+Alternatively right click a pallet -> Create Pallet Movement -> Pallet Movement
+![Toolbar Location](assets/tms-tasks/tms-tasks-create-pallet-task-000-1.png)
+
 3) Select a pallet. Click next.
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-pallet-task-001.png)
 
@@ -189,6 +201,9 @@ An Automatic Retrieve Task is used to shuffle a defined number of pallets away f
 
 2) Go to Manage Traffic -> TMS Tasks -> Multi-Pallet Movement
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-multipallet-task-000.png)
+
+Alternatively right click a pallet -> Create Multi-Pallet Task -> Multi-Pallet Movement
+![Toolbar Location](assets/tms-tasks/tms-tasks-create-multipallet-task-000-1.png)
 
 3) Select a task type. Click next.
 ![Toolbar Location](assets/tms-tasks/tms-tasks-create-multipallet-task-001.png)
