@@ -46,6 +46,10 @@ Upon clicking on the notification pin, a detailed notification card will appear,
 
 - **ACKNOWLEDGE**: By pressing the 'Acknowledge' button, you confirm your awareness of the notification, which is often the first step in addressing it. A success toast message will appear as a confirmation of your action. Then, the notification pin will be updated to disapear, to reflect the acknowledgment.
 
+![Acknowledgment Button](assets/notification-button-ack.png "Acknowledgment Success Toast")
+
+![Acknowledgment Success Toast](assets/notification-tag-ack.png "Acknowledgment Success Toast")
+
 ![Acknowledgment Success Toast](assets/notifications-3d-ack-toast.png "Acknowledgment Success Toast")
 
 <br/>
@@ -100,12 +104,6 @@ Each pin on the warehouse canvas features a count badge, showing the number of a
 ![Notification Count Badge](assets/notifications-card-count.png "Notification Count Badge")
 
 ## Actionable Responses 🛠️
-
-When you acknowledge a notification, a success toast message appears, confirming the action. This feedback is crucial, as acknowledging the notification is often the first step in addressing it.
-
-![Acknowledgment Button](assets/notification-button-ack.png "Acknowledgment Success Toast")
-
-![Acknowledgment Success Toast](assets/notification-tag-ack.png "Acknowledgment Success Toast")
 
 ### Acknowledgement of Notification (🟡)
 
