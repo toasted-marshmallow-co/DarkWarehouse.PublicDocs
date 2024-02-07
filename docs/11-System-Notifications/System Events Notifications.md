@@ -109,6 +109,8 @@ Each pin on the warehouse canvas features a count badge, showing the number of a
 
 - **ACKNOWLEDGE**: Pressing the 'Acknowledge' button confirms that you have seen and are aware of the notification. This action is usually the first step in addressing the notification.
 
+![Acknowledgment Button](assets/notification-button-ack.png "Acknowledgment Success Toast")
+
 ### Time Urgency (🟣)
 
 - **TIME URGENCY**: Notifications that are about to expire will show the expiry time in red text accompanied by a vibrating alarm icon. This visual cue indicates that the notification requires immediate attention.
