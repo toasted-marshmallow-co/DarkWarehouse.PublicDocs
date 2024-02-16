@@ -14,15 +14,15 @@ Navigate to the **User Management** page by clicking on the profile icon in the 
 
 Within the User Management Portal, you can find the following sections:
 
-- :green_square: **Admin CRUD Operations**: Quick access to Create, Read, Update, and Delete user functionalities.
+- :green_square: **Admin Operations**: Quick access to Create, Read, Update, and Delete user functionalities.
 - :orange_square: **Search and Filter**: Easily search for users or filter them by roles and lock status.
 - :blue_square: **Users List**: A comprehensive table displaying user details like usernames, roles, and status.
 
 ![Users Table](assets/users-landing-portal.png)
 
-### Admin CRUD Actions :computer_mouse:
+### Admin Operations :computer_mouse:
 
-Administrative actions for user management are available in a button group format, allowing for Create, Read, Update, and Delete (CRUD) operations:
+Administrative actions for user management are available in a button group format, allowing for Create, Read, Update, and Delete operations:
 
 - **Create User** :heavy_plus_sign: — Add a new user account.
 - **Edit User** :memo: — Modify existing user account details.
@@ -40,12 +40,12 @@ Some actions are available for batch processing, like deleting or locking/unlock
 
 ### Context Menu :computer_mouse:
 
-Access additional user management features by right-clicking on a user to open the context menu, which provides quick links to all CRUD operations and more. This includes changing user roles and copying user IDs or data, each with its distinct icon.
+Access additional user management features by right-clicking on a user to open the context menu, which provides quick links to all operations and more. This includes changing user roles and copying user IDs or data, each with its distinct icon.
 
 ![Context Menu](assets/users-landing-portal-context-menu-open.png)
 
 :::info
-The context menu complements the Admin CRUD Actions by providing a quick and user-friendly way to manage users without navigating away from the user list.
+The context menu complements the Admin Actions by providing a quick and user-friendly way to manage users without navigating away from the user list.
 :::
 
 ### Search & Filter :mag_right:
@@ -54,9 +54,17 @@ Utilize the search bar to quickly find users or apply filters to sort users by r
 
 ![Filter Users](assets/users-landing-portal-filter.png)
 
+### Understanding Authorization Password :closed_lock_with_key:
+
+An **Authorization Password** is a security measure to ensure that any changes made to user accounts are performed by authorized personnel. This password is typically set by the system administrator and may be required for various user management tasks such as creating, editing, or deleting user accounts.
+
+:::note Authorization Security
+Always keep the Authorization Password confidential to prevent unauthorized changes. If you are not provided with this password or have forgotten it, contact your system administrator.
+:::
+
 ### Creating a User :heavy_plus_sign:
 
-To add a new user, click the **Create User** button and fill out the required information in the form, including first and last names, username, email, role, and system instance. Admin authorization is required to ensure secure user creation.
+To add a new user, click the **Create User** button and fill out the required information in the form, including first and last names, username, email, role, and system instance.
 
 ![Create User Form](assets/users-landing-portal-create-user.png)
 

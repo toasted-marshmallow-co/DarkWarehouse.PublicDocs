@@ -27,7 +27,7 @@ On the **My Profile** page, you can view and update your personal information. H
 - **Role and System Access**: Your designated role and the systems you have access to within the platform.
 
 :::note
-Some profile settings may require administrator rights to change. Contact your system administrator if you need to update such restricted information.
+As this is a B2B application, some profile settings may require administrator rights to change. Contact your system administrator if you need to update such restricted information.
 :::
 
 ## Updating Personal Details :pencil2:
@@ -35,7 +35,7 @@ Some profile settings may require administrator rights to change. Contact your s
 Your profile is the place to keep your contact details up-to-date:
 
 - Navigate to **My Profile** for an overview of your personal information.
-- Make any necessary changes to your name, email, or other personal details.
+- Make any necessary changes your user preferences and update your password.
 
 ![Profile Overview](assets/users-profile-landing-page.png)
 
