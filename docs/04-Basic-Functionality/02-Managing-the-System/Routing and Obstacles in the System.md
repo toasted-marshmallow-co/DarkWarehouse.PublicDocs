@@ -8,7 +8,7 @@ This page provides an overview of routing and the different obstacles delaying o
 
 ## Routing🛣️
 
-Routing is the process of find the path an Omni-Mole will take to perform a task. It is created by analysing the current state of the system, specifically the zones the Omni-Mole is in, and choosing the best path that navigates around any obstacles in the system.
+Routing is the process of finding the path an Omni-Mole will take to perform a task. It is created by analysing the current state of the system, specifically the zones the Omni-Mole is in, and choosing the best path that navigates around any obstacles in the system.
 
 Routing makes up to four attempts with different requirements:
 1) Find a route through a **vtu with the least number of tasks** and **without any temporary obstacles**.
@@ -16,7 +16,7 @@ Routing makes up to four attempts with different requirements:
 3) Find a route through **without any temporary obstacles**.
 4) Find a route through **with any temporary obstacles**.
 
-If the system fails to find any of the above routes the task will not be performed. At this point you may need to look into what permanent obstacles exist in the system that coud be causing routing to fail.
+If the system fails to find any of the above routes, the task will not be performed. At this point you may need to look into what permanent obstacles exist in the system that coud be causing routing to fail.
 
 ### Routes Required for Tasks
 
@@ -24,27 +24,31 @@ Different tasks require different routes, this is discussed below.
 
 #### Generic Tasks🛣️
 
-Generic Tasks require a single route from the Omni-Moles current location to the tasks destination location.
+Generic Tasks require a single route from the Omni-Mole's current location to the task's destination location.
 
 #### Pallet Task🚚
 
-Pallet Tasks require a route from the Omni-Moles current location to the pallets current location and then another route from the pallets current location to the tasks destination location. If the ssecond route cannot be performed then the first route will also not be performed.
+Pallet Tasks requires two routes. 
+1) A route from the Omni-Mole's current location to the pallet's current location. 
+2) A route from the pallet's current location to the task's destination location. 
+
+If the second route cannot be performed then the first route will also not be performed.
 
 #### Multi-Pallet Task🔁
 
-Multi-Pallet Tasks require a single route from the Omni-Moles current location to the tasks destination location.
+Multi-Pallet Tasks require a single route from the Omni-Mole's current location to the task's destination location.
 
 ## Obstacles🚧
 
-Obstacles are defines as any obstruction to the routing of the system, such as locks, Omni-Moles, or zone setup. It is important to understand these when diagnosing issues related to routing.
+Obstacles are defined as any obstruction to the routing of the system, such as locks, Omni-Moles, or zone setup. It is important to understand these when diagnosing issues related to routing.
 
 ### Temporary Obstacles🚦
 
-Temporary obstacles are obstacles that will automatically be resolved by the system and so a path can be found by passing through them. The Omni-Mole will move along it's path until it reaches a temporary obstacle, wait for it to be resolved, then continue. A couple examples of temporary obstacles are active subtasks, Omni-Moles assigned to tasks and Omni-Moles the are online and in auto and can be relocated.
+Temporary obstacles are obstacles that will automatically be resolved by the system. This means a path can be found by passing through them. The Omni-Mole will move along it's path until it reaches a temporary obstacle, wait for it to be resolved, then continue. A couple examples of temporary obstacles are active subtasks, Omni-Moles assigned to tasks, and Omni-Moles that are online, in auto and can be relocated.
 
 ### Permanent Obstacles⛔
 
-Permanent obstacles can not be automatically resolved and paths will need to be routed around them. If no path can be found by routing around them, then the task cannot continue until a user manually resolves the obstacles blocking the path.
+Permanent obstacles cannot be automatically resolved and paths will need to be routed around them. If no path can be found by routing around them, then the task cannot continue. Instead a user will need to manually resolves the obstacles blocking the path.
 
 To demonstrate the below obstacles we will use the following situation:
 ![Toolbar Location](assets/routing-and-obstacles-in-the-system/permanent-obstacle-scenario.png)
@@ -64,7 +68,7 @@ In order to resolve the issue the locks need to be removed.
 
 ###### Manual Locks🚫
 
-Manual locks can only be create by a user so it is best to check why this lock was created before removing it.
+Manual locks can only be created by a user, so it is best to check why this lock was created before removing it.
 
 ###### Recovery Locks💥
 
@@ -85,7 +89,7 @@ In order to resolve the issue the locks need to be removed.
 
 ###### Manual Locks🚫
 
-Manual locks can only be create by a user so it is best to check why this lock was created before removing it.
+Manual locks can only be created by a user, so it is best to check why this lock was created before removing it.
 
 ###### Recovery Locks💥
 
@@ -93,7 +97,7 @@ Recovery locks are created after a subtask fails. The normal recovery procedure 
 
 #### Omni-Mole that is Offline or not in Auto🔴
 
-An Omni-Mole that offline or not in auto can obstruct routing if it is blocking the only path that can be found. This is because the system is unable to automatically tell it to move out of the way.
+An Omni-Mole that is offline or not in auto can obstruct routing if it is blocking the only path that can be found. This is because the system is unable to automatically tell it to move out of the way.
 
 ##### Diagnosis🔍
 
@@ -102,11 +106,11 @@ Below is an example of an offline Omni-Mole preventing a path from being found.
 
 ##### Solution💡
 
-Check why the Omni-Mole is offline and then either put it back online or manually move it out of the way and update it's location.
+Check why the Omni-Mole is offline, then either put it back online or manually move it out of the way and update it's location.
 
 #### Omni-Mole Not Assigned the Zone
 
-If an Omni-Mole is not assigned to a zone that include the source and destination or a path between them then a path cannot be found.
+If an Omni-Mole is not assigned to a zone that includes the source and destination, or a path between them, then a path cannot be found.
 
 ##### Diagnosis🔍
 
@@ -152,7 +156,7 @@ Below is an example of an Omni-Mole being outside its assigned zone.
 
 ##### Solution💡
 
-Either extend the current assigned zones to include the Omni-Mole or assign another zone to the Omni-Mole that overlaps with the existing zone.
+Either extend the current assigned zones to include the Omni-Mole, or assign another zone to the Omni-Mole that overlaps with the existing zone.
 
 #### Disconnect in the Zone
 
