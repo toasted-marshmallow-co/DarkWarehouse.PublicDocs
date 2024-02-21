@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Management System View
+# System View
 
-This page provides an overview of the basic layout of the management system view 🖥️.
+This page provides an overview of the basic layout of the System View 🖥️.
 It will guide you through the basic tools 🛠️ available for managing the system.
 This is essential for gaining a broad overview 🌍 and understanding of what's going on within the AS/RS system 📊.
 
