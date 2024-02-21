@@ -59,18 +59,18 @@ There are a few tests that can be done to test if the communication between the 
 On the Whisker, under Settings>Service Communication, you will be able to test the connection between the Whisker and the DarkWarehouse. This can be done by verifying that the "URL for the DarkWarehouse API" is correct and then pressing "Check Connection".
 
 1. Navigate to Service Communication 🛰️
-![Whisker Home - Settings](assets/whisker-home-page-settings.png)
+![Whisker Home - Settings](assets/diagnosis/whisker-home-page-settings.png)
 
 2. Verify URL and Check Connection 🔗
-![Whisker Service Communication Check](assets/whisker-settings-service-communication.png)
+![Whisker Service Communication Check](assets/diagnosis/whisker-settings-service-communication.png)
 
 3. Evaluate Response 📊
    1. Successful Connection ✅ \
    If the connection is successful, you will see a message at the bottom of the screen that says "Connected to.." some information about the current DarkWarehouse connection.
-   ![DarkWarehouse Connection Test - Success](assets/whisker-settings-service-communication-success.png)
+   ![DarkWarehouse Connection Test - Success](assets/diagnosis/whisker-settings-service-communication-success.png)
    2. Unsuccessful Connection ❌ \
    If the connection fails, an error message will pop-up explaining what went wrong. Please contact a Toasted Marshmallow employee if you do not understand the error.
-  ![DarkWarehouse Connection Test - Error](assets/raw/whisker-settings-service-communication-error-raw.png)
+  ![DarkWarehouse Connection Test - Error](assets/diagnosis/raw/whisker-settings-service-communication-error-raw.png)
 
 #### DarkWarehouse to Whisker Test
 
@@ -78,11 +78,11 @@ A similar test can be done to ensure the DarkWarehouse is connected to the Whisk
 
 1. Navigate to DarkWarehouse API Definition 🌐 \
    This can be found at the mai URL of the application. Right down at the bottom, you will find an API route called "dev/whisker-diagnostics > /api/v1/dev/whisker-diagnostics/connection". Locate this and press "Try it out"
-   ![DarkWarehouse Whisker Connection Check - Try it out](assets/darkwarehouse-whisker-diagnostics-route-try.png)
+   ![DarkWarehouse Whisker Connection Check - Try it out](assets/diagnosis/darkwarehouse-whisker-diagnostics-route-try.png)
 
 2. Run the Route ▶️ \
    Press "Execute" to run the connection test.
-   ![DarkWarehouse Whisker Connection Check - Execute](assets/darkwarehouse-whisker-diagnostics-route-execute.png)
+   ![DarkWarehouse Whisker Connection Check - Execute](assets/diagnosis/darkwarehouse-whisker-diagnostics-route-execute.png)
 
 3. Evaluate Response
    1. If successful, you will received a 200 response with the connection values.
@@ -93,17 +93,17 @@ A similar test can be done to ensure the DarkWarehouse is connected to the Whisk
 You are able to bypass the use of the DarkWarehouse and send auto instructions to machine through the Whisker. This can be done by navigating to the "Manual Control" page and setting up the control to send the required instruction to the machine. The instruction and response can be evaluated to determine if Whisker to machine communication is setup correctly. To perform this test, follow the steps below:
 
 1. Navigate to Manual Control 🕹️
-![Whisker Home - Manual Control](assets/whisker-home-page-machine-control.png)
+![Whisker Home - Manual Control](assets/diagnosis/whisker-home-page-machine-control.png)
 
 2. Select the Correct Machine and Inquiry Type 🤖
   Select the machine you would like to send an instruction to and then select "Request Live Status" as the Inquiry Type. Once that is done, press "Send Message"
-![Manual Control - Send Live Status](assets/whisker-machine-control-live-status.png)
+![Manual Control - Send Live Status](assets/diagnosis/whisker-machine-control-live-status.png)
 
 3. Evaluate Response via Live Telemetry 📊
    1. Navigate to the Live Telemetry page where all communication in and out of the Whisker can be viewed.
-    ![Whisker Home - Live Telemetry](assets/whisker-home-page-live-telemetry.png)
+    ![Whisker Home - Live Telemetry](assets/diagnosis/whisker-home-page-live-telemetry.png)
    2. Look through the live telemetry logs and find the live status that was just sent to the request VLP address. If everything was successful, you should see an Inquiry then Status from the machine followed by an Acknowledge from the Whisker. If those messages are not all present, a breakdown in communication has occurred and the relevant team should be notified.
-   ![Whisker Live Telemetry - Live Status](assets/whisker-live-telemetry.png)
+   ![Whisker Live Telemetry - Live Status](assets/diagnosis/whisker-live-telemetry.png)
 
 ### Test 3: Machine Location Update Test ♻️ (DarkWarehouse ↔️ Whisker ↔️ Machine) 
 
@@ -118,7 +118,7 @@ Trigger a live status request from the DarkWarehouse to the OmniMole. This will 
 
 3. Monitor Whisker Telemetry for Transmission Details 📊 \
 Check the Whisker's telemetry logs to confirm that the live status request was sent correctly, using the appropriate VLP address.
-![Whisker Live Telemetry - Live Status](assets/whisker-live-telemetry.png)
+![Whisker Live Telemetry - Live Status](assets/diagnosis/whisker-live-telemetry.png)
 
 4. Verify Machine Response 🤖 \
 Ensure the machine's reply with its actual location is received. The correct response should lead to an automatic update of its position on the DarkWarehouse UI.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 # Updating Machine Locations
 
@@ -31,53 +31,53 @@ Ensure the __cursor__ is in `Select Singular` mode. ✅
 
 :::
 
-![Selected Location](assets/systems-view-selected-location.png)
+![Selected Location](assets/update-location/systems-view-selected-location.png)
 
 
 2. Locate the machine within the system that you wish to update the location for. 🔍
 
-![Selected Machine](assets/systems-view-selected-machine.png)
+![Selected Machine](assets/update-location/systems-view-selected-machine.png)
 
 
 3. Right-click on the machine once it's been located. This will trigger the context menu to appear. 🖱️
 
-![Omni-Mole Context](assets/raw/systems-view-omnimole-context-raw.png)
+![Omni-Mole Context](assets/update-location/raw/systems-view-omnimole-context-raw.png)
 
 4. Select `Update Location` in the context menu. 📌
 
-![Update Location](assets/systems-view-omnimole-context.png)
+![Update Location](assets/update-location/systems-view-omnimole-context.png)
 
 5. At this point, the user can either update the machine to a specified location, or to be 'Outside the system'. If the user opts for the latter, step 1 can be safely ignored. 🌐
    
-![Update Location Context](assets/systems-view-omnimole-context-update-location.png)
-![Update Location Success](assets/systems-view-omnimole-context-update-location-success.png)
+![Update Location Context](assets/update-location/systems-view-omnimole-context-update-location.png)
+![Update Location Success](assets/update-location/systems-view-omnimole-context-update-location-success.png)
                                                    
 An alternative method to complete the same task, depending on what the operator prefers:
 
 1. Open the tools menu on the left-hand side of the screen. 🧰
 
-![Tools menu icon](assets/systems-view-tools-menu-icon.png)
-![Tools menu open](assets/systems-view-tools-menu.png)
+![Tools menu icon](assets/update-location/systems-view-tools-menu-icon.png)
+![Tools menu open](assets/update-location/systems-view-tools-menu.png)
 
 2. Select `Manage Traffic` and then `Machines`. 🚦
 
-![Tools menu manage traffic](assets/systems-view-tools-menu-traffic.png)
+![Tools menu manage traffic](assets/update-location/systems-view-tools-menu-traffic.png)
 
 3. Select `Update Machine Location` from the options available. 🔄
 
-![Tools menu update machine location](assets/systems-view-tools-menu-traffic-machines.png)
+![Tools menu update machine location](assets/update-location/systems-view-tools-menu-traffic-machines.png)
 
 4. Follow the steps presented by the form:
 
    1. Select a machine. This can be done either by opening the machine table using the `Select Machine` button or by clicking the machine on the canvas. 🖼️
 
-    ![Tools menu update location form select machine](assets/systems-view-tools-menu-traffic-machines-select.png)
-    ![Tools menu update location form select machine modal](assets/systems-view-tools-menu-traffic-machines-select-modal.png)
+    ![Tools menu update location form select machine](assets/update-location/systems-view-tools-menu-traffic-machines-select.png)
+    ![Tools menu update location form select machine modal](assets/update-location/systems-view-tools-menu-traffic-machines-select-modal.png)
 
    2. Select a valid location following the same process as step one. Remember, Omni-Moles can only be updated to Lanes, Vtus, and Aisles. 🗺️
 
-    ![Tools menu update location form select location](assets/systems-view-tools-menu-traffic-machines-select-location.png)
-    ![Tools menu update location form select location modal](assets/systems-view-tools-menu-traffic-machines-select-location-modal.png)
+    ![Tools menu update location form select location](assets/update-location/systems-view-tools-menu-traffic-machines-select-location.png)
+    ![Tools menu update location form select location modal](assets/update-location/systems-view-tools-menu-traffic-machines-select-location-modal.png)
 
 5. Complete the process by clicking the `Update` button. ✅
 
@@ -94,7 +94,7 @@ For example:
 
 1. If the operator wishes to relocate the Vtu within the system, they should select the location they wish to move the machine to. 📍
 
-![Selected Vtu Lane](assets/systems-view-selected-vtu-lane.png)
+![Selected Vtu Lane](assets/update-location/systems-view-selected-vtu-lane.png)
 
 :::note
 
@@ -104,12 +104,12 @@ A Vtu can only be updated to Vtu Lanes. This implies a Vtu can be relocated to a
 
 2. Right-click on the Vtu that is to be relocated. 🖱️
 
-![Vtu Context](assets/systems-view-vtu-context-menu.png)
+![Vtu Context](assets/update-location/systems-view-vtu-context-menu.png)
 
 3. Select `Update Location` from the options available. 📌
 
-![Vtu Context Location Update](assets/systems-view-vtu-context-menu-update-location.png)
+![Vtu Context Location Update](assets/update-location/systems-view-vtu-context-menu-update-location.png)
 
 4. At this point, again, the user can opt with whichever location update procedure is applicable. 🔄
 
-![Location Update Success](assets/systems-view-vtu-context-menu-update-location-success.png)
+![Location Update Success](assets/update-location/systems-view-vtu-context-menu-update-location-success.png)

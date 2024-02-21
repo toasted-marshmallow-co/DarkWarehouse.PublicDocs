@@ -1,24 +1,18 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 ---
 
-# Warehouse Management Concepts
+# Introduction
 The Omni-Mole Automated Storage and Retrieval System is a type of automated pallet storage system that leverages deep lane storage with battery-operated shuttle robots. The intention of the system is to store and retrieve palletized goods. The Omni-Mole system is different to a conventional deep-lane storage system in that it allows the battery-operated shuttles to travel laterally between deep 
 
-## WMS Policies
+## TMS Tasks and Subtasks
 
-## WMS Special Locations
+### Tasks
 
-## Products and Pallets
+#### Machine Selection
 
-## Inbound Movement Terminology
+#### Routing
 
-### Pallet Rejection
+### Subtasks
 
-## Outbound Movement Terminology
-
-## Tasks and Task Buckets
-
-### Task Types
-
-### Selecting Pallets
+#### Building Instructions

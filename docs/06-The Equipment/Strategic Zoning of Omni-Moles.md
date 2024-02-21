@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # Strategic Zoning of Omni-Moles
@@ -48,7 +48,7 @@ The first option is the easiest to setup but unlike the second it does not allow
 An example of the setup for the second is below:
 Level 1           |  Level 2
 :-------------------------:|:-------------------------:
-![](assets/level-1-zone.png)  |  ![](assets/level-2-zone.png)
+![](assets/om-zoning/level-1-zone.png)  |  ![](assets/om-zoning/level-2-zone.png)
 
 Both level 1 and level 2 are inside the zone allowing the Omni-Mole to move between them.
 
@@ -89,14 +89,14 @@ An example of the setup for two Omni-Moles is below:
 #### Omni-Mole 1
 Level 1           |  Level 2
 :-------------------------:|:-------------------------:
-![](assets/level-1-zone.png)  |  ![](assets/level-2-no-zone.png)
+![](assets/om-zoning/level-1-zone.png)  |  ![](assets/om-zoning/level-2-no-zone.png)
 
 Level 1 and the VTU lanes on level 2 are inside the zone
 
 #### Omni-Mole 2
 Level 1           |  Level 2
 :-------------------------:|:-------------------------:
-![](assets/level-1-no-zone.png)  |  ![](assets/level-2-zone.png)
+![](assets/om-zoning/level-1-no-zone.png)  |  ![](assets/om-zoning/level-2-zone.png)
 
 Level 2 and the VTU lanes on level 1 are inside the zone 
 
