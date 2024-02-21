@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# WMS Special Locations :round_pushpin:
+# WMS Special Locations
 WMS Special Locations are unique locations in the Dark Warehouse system, this is a quick guide that will help you understand WMS Special Locations as well as how to manage them:clipboard:. There is a number of WMS Special Location Types that can be found in the system which are described below.
 
 ## WMS Special Location Types :pushpin:

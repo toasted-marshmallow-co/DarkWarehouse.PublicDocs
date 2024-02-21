@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# System Notifications in DarkWarehouse 📢
+# System Notifications in DarkWarehouse
 
 Stay ahead of the game in the DarkWarehouse Portal with our proactive notification system. 🚀 It’s designed to keep you informed and in control, with visual cues and actionable insights right at your fingertips. 🛠️✨
 

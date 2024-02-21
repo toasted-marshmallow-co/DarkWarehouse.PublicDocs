@@ -1,33 +1,65 @@
 # README.md for DarkWarehouse Documentation
 
 ## Introduction 🌟
-Welcome to the DarkWarehouse documentation project! This README is for developers and contributors who are preparing documentation for the end-users of DarkWarehouse, an application suite designed for warehouse management. Our end-users, including fork truck drivers and mid-level warehouse managers, may not be highly tech-literate. Therefore, our documentation must be simple, engaging, and fun to read, incorporating emojis 😃, bullet points, and ample visuals.
+Welcome to the DarkWarehouse documentation project! 
+
+This README is for developers and contributors who are preparing documentation for the end-users of the Dark Warehouse product suite. 
+
+Our end-users may not be highly tech-literate and include roles such as fork truck drivers and mid-level warehouse managers. Therefore, our documentation must be simple, engaging, and fun to read, incorporating emojis 😃, bullet points, and ample visuals. 
 
 ## Writing Guidelines 📝
 ### Language and Tone 💬
 - **Simplicity is Key** 🗝️: Use plain language suitable for non-tech-savvy users. 
-> **Note 1**: You may use acroynms that are defined in the Definitions section, but try keep the documentation as simple to read as possible. 
+> **Note**: You may use acroynms that are defined elsewhere in the documentation or at the top of a document. Try minimize the usage of unfamiliar acronyms to keep the documentation as simple to read as possible.
 - **Engaging Content** 🎉: Make use of emojis, short bullet points, and a conversational tone to keep the documentation lively.
 - **Visual Aid** 🖼️: Include lots of pictures, diagrams, and screenshots to aid understanding.
 
 ### Formatting Standards 📐
-- **Headings** 🏷️: Use h1 for primary headings. All other headings should be h2, and subheadings h3 to h6.
+- **Headings** 🏷️: Regarding headings the following is applicaple: 
+  - Use h1 for the primary heading for the document. 
+  > **Note**: Never include emojis in your h1 headings. 
+  - All major headings in the document should be h2. These can include emojis where applicable.
+  - Any subheadings should use h3 to h6. These can include emojis where applicable.
 - **Content Structure** 📚:
-  - Begin each page with a primary heading, followed by 3-5 sentences summarizing the page content.
+  - Begin each page with a primary heading (h1), followed by 3-5 sentences summarizing the page content.
   - **Example**:
     ```
     # Page Title 📘
     This page provides an overview of [Topic]. It will guide you through [Key Features/Steps]. This is essential for [Specific Users/Use Cases]. Continue reading to learn more about [Topic] 🚀.
     ```
 
-## Image Guidelines 📸
+### File Naming 📝
+- Your files should always have the same name as your primary heading (eg. primary heading is `Obstacles in the System` then the file name should be `Obstacles in the System.md`).
+
+## Asset Guidelines 📸
 ### General Instructions
+- **Asset Types**: Most assets will be images and external assets linked through HTTPS links. It is recommended that you understand how to link assets in a docusaurus .md file, references are provided below:
+  - [Linking assets in a Docusaurus website](https://docusaurus.io/docs/markdown-features/assets)
 - **Preferred Format** 🎨: Always prefer .png format for images.
-- **Storage** 💾: Store images in an `/assets` folder in the respective directory, e.g., `/docs/Definitions/assets`. If the folder does not exist, create it. 
+- **Storage** 💾: Assets for a particular page must be stored in a lowercase and minified version of that page's name within a local `/assets` directory within the directory where the page exists. Example below: 
+   - Your page is called `Login.md`.
+   - You create an appropriately named directory within the `/assets` directory as follows `/assets/log-in`.
+   - You create a directory therein to store raw data as follows `/assets/log-in/raw`.
+   - Images with markup are stored in `/assets/log-in`, raw images are stored within `/assets/log-in/raw`.
+   - An example of this is shown below:
+   ![Access My Profile](assets/readme/naming-assets.png)
+
+   > **Note**: The idea behind the `/raw` directory is that the images with markup can be redone if the theme of the application changes or if more consistent markup is required.
+- **Referencing**: Because the assets are stored in a local `/assets` folder when referencing you can use the syntax: 
+
+`![Name of Image](/assets/name-of-your-page/name-of-your-asset.png)`
+
+- **Content Not Available**: When content is not yet available for your documentation, please use the placeholder image below. This is done with the syntax as follows:
+
+`![Placeholder Image](/img/placeholder-image.png)`
+
+![Placeholder image](/static/img/placeholder-image.png)
+
+- **Reusable/Static Assets**: Like the placeholder image, for images that will be reused on multiple pages, please store these in the `/static/img` folder. By default, this folder is exposed to the client as static assets. (for further reading see [this Docusaurus link](https://docusaurus.io/docs/markdown-features/assets#static-assets)).
 
 ### Markup on Images
 Should you need to add anything to an image to emphasise a point or highlight a feature, these additions are termed "markup". 
-- **Raw Images** 🖼️: When adding markup, always store an unmarked raw image in `../assets/raw`. This allows different markup to be added at a later stage, say for example, if the theme of the project changes.
+- **Raw Images** 🖼️: When adding markup, remember to store the raw image in the `../assets/your-page-name/raw` directory. 
 - **Markup Tools** ✍️: Only use underlines, arrows, and boxes with a 3pt line thickness.
 - **Color Palette** 🌈: The following colours are allowed for markup:
     - #ffb900 (yellow)
@@ -40,8 +72,14 @@ Should you need to add anything to an image to emphasise a point or highlight a 
 ### Screenshots
 - **Application Focus** 👀: When using screenshots, ensure that screenshots display only the application, excluding personal browser elements like tabs and favorites.
 - **Dark Mode** 🌙: Since the application is called DarkWarehouse, it makes sense that dark mode and dark mode screenshots are the default.
+- **Full Screen Images**: Always show full screen images, do not provide ONLY cut out sections of the screen. Examples shown below:
+
+![Full Screen Image Demo 1](/assets/readme/full-screen-image-demo-1.png)
+
+![Full Screen Image Demo 2](/assets/readme/full-screen-image-demo-2.png)
 
 ### Diagrams
+Diagrams refer to content that is used to demonstrate a topic outside of media from the application.
 - **Creation** 🛠️: When creating diagrams that showcase the elements of the system (i.e. racking, Omni-Moles, VTUs, etc.), please use the provided PowerPoint file for creating diagrams (It can be found at: /assets/DarkWarehouse Assets.pptx). This ensures consistency and source control.
 - **Incorporation** 📊: Screenshot the diagram from PowerPoint that you create and include it in the documentation.
 
