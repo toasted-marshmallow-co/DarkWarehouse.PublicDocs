@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Location Locks
+# Turn Based Game

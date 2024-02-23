@@ -13,6 +13,5 @@ The Omni-Mole Automated Storage and Retrieval System is a type of automated pall
 
 #### Routing
 
-### Subtasks
+#### Building Subtasks
 
-#### Building Instructions
