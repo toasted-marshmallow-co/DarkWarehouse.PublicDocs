@@ -21,6 +21,10 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  // Add static directories
+  staticDirectories: ['static'],
+  
+  // Add Mermaid diagrams
   markdown: {
     mermaid: true,
   },
