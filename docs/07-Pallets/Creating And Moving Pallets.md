@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
-# Creating And Moving Pallets 📦
+# Creating And Moving Pallets
 
 Welcome to the Darkwarehouse pallet creation guide! This streamlined process will help you efficiently manage your pallet inventory. Requirements to access these functions are also specified below, let's dive in! 🚀
 
