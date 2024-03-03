@@ -21,6 +21,10 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  // Add static directories
+  staticDirectories: ['static'],
+  
+  // Add Mermaid diagrams
   markdown: {
     mermaid: true,
   },
@@ -79,15 +83,15 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Documentation",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
+        // {
+        //   title: "Documentation",
+        //   items: [
+        //     {
+        //       label: "Tutorial",
+        //       to: "/docs/intro",
+        //     },
+        //   ],
+        // },
         {
           title: "Resources",
           items: [

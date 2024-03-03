@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             // className="button button--secondary button--lg"
             className="px-4 py-2 font-bold text-white bg-blue-500 rounded-md hover:no-underline hover:bg-blue-600 hover:text-white"
-            to="/docs/intro"
+            to="/docs/Introduction"
           >
             Dark Warehouse Docs ⏱️
           </Link>
