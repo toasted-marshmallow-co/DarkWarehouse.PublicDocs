@@ -4,12 +4,11 @@ sidebar_position: 2
 
 # Location Locks
 
-Location locks are dynamic abstractions of location states within the AS/RS system. Locations by themselves are static entities but can be made dynamic through the use of location locks. The manner in which Machines (particularly OmnimMole and Vtus) can move around the system is in no small part dicated by the lock configuration of the system.
-That said, certain lock types are not imperative to the functionality of the traffic management or warehouse management systems.
+Location locks are dynamic abstractions of location states within the AS/RS system. Locations by themselves are static entities but can be made dynamic through the use of location locks. The manner in which Machines (particularly OmnimMole and Vtus) can move around the system is in no small part dicated by the lock configuration of the system. That said, certain lock types are not imperative to the functionality of the traffic management or warehouse management systems.
 
 There are various lock types within the AS/RS system and each serves a unique purpose.
 
-## TMS Locks
+## TMS Locks 🔒
 
 TMS Locks are locks in the context of the Traffic Managment System. 
 There are a few types of these including:
@@ -19,9 +18,13 @@ There are a few types of these including:
 - Recovery Locks
 - Invalid Locks
 
-### Manual Locks
+### Manual Locks 🟨
+ 
+Manual locks, as the name suggests, can be created manually by the operators and their function is to prevent machines from travelling to or through specific locations. ⛔
 
-Manual locks, as the name suggests, can be created manually by the operators and their function is to prevent machines from travelling to or through specific locations.
+:::note
+Manual locks are the only lock type that the operator will be able to create and remove directly. 
+:::
 
 For example, if the operator decides to lock an aisle the OmniMole will not be able to travel over or directly to that location entity. If a user decides to lock a Vtu lane, a Vtu will not be able to travel to or through that locked location. 
 
@@ -33,70 +36,163 @@ Manual locks will directly affect the manner in which routes are established for
 
 :::
 
-:::note
-Manual locks are the only lock type that the operator will be able to create and remove directly. 
-:::
+>The apperance of manual locks on the Management System View
+![Manual Lock](assets/location-locks/ms-view-lock-manual.png)
 
-#### Locking a Location
+
+>The apperance of manual locks on the Traffic Management View
+![Manual Lock](assets/location-locks/tms-view-lock-manual.png)
+
+
+#### Locking a Location 🔒
 
 A user can lock any specific location by following the procedure:
 
-1. Right click on the location that needs to be locked. 
-> Insert figure of lock and notification
-3. Click on the `Lock` button in order to create a lock at the location
-> Insert figure of lock and notification
-> Insert figure of lock and notification
+1. Right click on the location that needs to be locked in order to open the `location context menu`
+ 
+![Manual Lock](assets/location-locks/raw/ms-view-context-menu-lock-raw.png)
 
 
-#### Locking multiple Locations
+2. Click on the `Lock` button in order to create a lock at the location
 
-> Insert figure of lock and notification
-> Insert figure of lock and notification
-> Insert figure of lock and notification
+![Manual Lock](assets/location-locks/ms-view-context-menu-lock.png)
 
 
-#### Unlocking a Location
+#### Locking multiple Locations 🔒🔒🔒
 
-> Insert figure of lock and notification
-> Insert figure of lock and notification
+At some stage it may be necessary to lock multiple locations at once. 
+In order to achieve this outcome, the operator can proceed as follows:
+
+1. Open the toolbar by selecting the expand shoulder button. 
+
+![Manual Lock](assets/location-locks/lock-tms-view.png)
+
+2. Select `Locations` from the toolbar to expand the `Locations` submenu. 
+
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar.png)
+
+3. Select `Lock Locations` from the `Locations` submenu. 
+
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar-locations.png)
+
+4. This will result in the locations lock menu opening on the right hand side of the screen.
+
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar-locations-lock.png)
+
+5. Once this menu is open, right click on a location that corresponds to the start of the multi-location selection to open the location context menu.
+Select `Select from Here` from the context menu.
+
+![Manual Lock](assets/location-locks/lock-tms-view-context-select-from.png)
+
+6. Follow the previous action by performing the same procedure. Open the location conext menu for the location that marks the end of the mult-location selction and click the `Select to Here` button on the context menu.
+
+![Manual Lock](assets/location-locks/lock-tms-view-context-select-to.png)
+
+7. At this point the operator should see a list of locations populated in the location context menu on the right hand side of the screen. The locations that are within the range of the selection should also appear highlighted on the layout. 
+The operator can deselect specific locations by clicking the bin icon on the menu.
+
+![Manual Lock](assets/location-locks/lock-tms-view-selection.png)
+
+8. Once the operator is satisfied that all the intended locations are included within the list, they may proceed to click the `Lock Locations For Instance` button at the bottom of the form.
+If the the operation is successful the locations will appear locked.
+
+![Manual Lock](assets/location-locks/lock-tms-view-success.png)
+
+#### Unlocking a Location 🔓
+
+A user can unlock specific locked location by following the procedure:
+
+1. Right click on the location that needs to be unlocked. 
+ 
+![Manual Lock](assets/location-locks/raw/ms-view-context-menu-unlock-raw.png)
+
+1. Click on the `Unlock` button in order to remove the ock at the location
+
+![Manual Lock](assets/location-locks/ms-view-context-menu-unlock.png)
 
 
-#### Unlocking multiple Locations
+#### Unlocking multiple Locations 🔓🔓🔓
 
-> Insert figure of lock and notification
-> Insert figure of lock and notification
-> Insert figure of lock and notification
+Similarly to locking multiple locations at once, the operator can also opt to unlock multiple locations at once.
+The procedure for this is as follows:
+
+1. Open the toolbar by selecting the expand shoulder button. 
+
+![Manual Lock](assets/location-locks/lock-tms-view.png)
+
+2. Select `Locations` from the toolbar to expand the `Locations` submenu. 
 
 
-### Subtask Locks
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar.png)
+
+3. Select `Unlock Locations` from the `Locations` submenu. 
+
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar-location-unlock.png)
+
+4. This will result in the locations unlock menu opening on the right hand side of the screen.
+
+
+![Manual Lock](assets/location-locks/lock-tms-view-toolbar-locations-unlock-menu.png)
+
+5. Once this menu is open, right click on a location that corresponds to the start of the multi-location selection to open the location context menu.
+Select `Select from Here` from the context menu.
+
+
+![Manual Lock](assets/location-locks/lock-tms-view-context--unlock-select-from.png)
+
+6. Follow the previous action by performing the same procedure. Open the location conext menu for the location that marks the end of the mult-location selction and click the `Select to Here` button on the context menu.
+
+![Manual Lock](assets/location-locks/lock-tms-view-context--unlock-select-to.png)
+
+7. At this point the operator should see a list of locations populated in the location context menu on the right hand side of the screen. The locations that are within the range of the selection should also appear highlighted on the layout. 
+The operator can deselect specific locations by clicking the bin icon on the menu.
+
+![Manual Lock](assets/location-locks/lock-tms-view-unlock-selection.png)
+
+8. Once the operator is satisfied that all the intended locations are included within the list, they may proceed to click the `Lock Locations For Instance` button at the bottom of the form.
+If the the operation is successful the locations will appear locked.
+
+:::note
+Only locations with existing locks will appear in the unlock menu.
+:::
+
+
+### Subtask Locks 🟢
 
 Subtask locks can **not** be created directly by the operator. Instead, they are used by TMS to __lock out__ a route for Omni-Moles that are actively performing tasks. Typically, when a pallet is required to move through the system, an Omni-Mole will be assigned to it. After machine assignment route calculations occur. The TMS attempts to calculate the most effective route given a dynamic set of inputs, and the outcome is a path of locations that form a cohesive route. These locations are then locked so that other machine traffic can not interfere with the Omni-Mole carrying out the task. 
 
 Subtask locks are visible for brief periods at a time and the system will go about creating and clearing these automatically. 
 
-> Insert figure of subtask locks
+![Subtask Lock](assets/location-locks/ms-view-lock-subtask.png)
+![Subtask Lock TMS View](assets/location-locks/tms-view-lock-subtask.png)
 
-### Recovery Locks
+### Recovery Locks 🔺
 
 Recovery locks can **not** be created directly by the operator. Recovery locks are created within the system when an issue occurs during normal operations. If, for example, an error has occurred within the system and an Omni-Mole has come to a halt and requires operator intervention the machine will be set to an error state and the location on which the machine is located will have a recovery lock created for it. These locks can be removed or resolved through interacting with the notification which will appear at the same time as the lock itself. 
 
-> Insert figure of lock and notification
+![Recovery Lock](assets/location-locks/ms-view-lock-recovery.png)
+![Recovery Lock TMS](assets/location-locks/tms-view-lock-recovery.png)
 
-### Invalid Locks
+
+### Invalid Locks 
 
 Invalid locks can **not** be created directly by the operator. Invalid locks are created automatically when data insecurity has occurred within the system. This implies that some event has led to uncertainty within the autonomous operations of the system and as result there is some data that will need to be manually validated by the operator before the operations and task surrounding the invalidity have been resolved.
 
-## WMS Locks
+![Placeholder Image](/img/placeholder-image.png)
+
+
+## WMS Locks 🔒
 
 WMS Locks are locks in the context of the Warehouse Management System.
 
 ### Selected Pallet Retrieve Lock
 
-Pallet retrieval locks can be created by the operator. 
-The purpose of pallet retrieval locks is to allow the user to 
+Pallet retrieval locks are automatically generated by the system in order to allow for the safe retrieval of pallets by OmniMoles.
 
-
-- To define whether a pallet can be deposited or retrieved 
+![Placeholder Image](/img/placeholder-image.png)
 
 ### Selected Pallet Deposit Lock
 
+Pallet retrieval locks are automatically generated by the system in order to allow for the safe deposits of pallets by OmniMoles.
+
+![Placeholder Image](/img/placeholder-image.png)
