@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Interacting With Chargers ⚡
+# Interacting With Chargers 
 
 Understanding chargers and charge pads is crucial for maintaining the system's power🔌. This guide illustrates various methods that can be used to interact with chargers and charge pads.
 
@@ -52,7 +52,7 @@ Simply right-click the omni-mole and send it to the nearest available location �
 ![send to nearest available location](assets/interacting-with-chargers/send-to-nearest-available-location.png "send to nearest available location").
 
 ### Quick Send To Charger Method ✨
-Quickly right-click on an omni-mole to open the short-cut options. Navigate to `Create Machine Task` and click on `Go To Nearest Available Charger`, done👍.
+Quickly right-click on an omni-mole to open the short-cut options⚡. Navigate to `Create Machine Task` and click on `Go To Nearest Available Charger`, done👍.
 
 ![quick go to charger](assets/interacting-with-chargers/quick-go-to-charger.png "charger go to charger").
 
