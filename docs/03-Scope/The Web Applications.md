@@ -2,11 +2,9 @@
 sidebar_position: 3
 ---
 
-# The Different Web Applications
+# The Web Applications
 
-## The UI
-
-## The API
+## Dark Warehouse
 
 ## The Whisker
 

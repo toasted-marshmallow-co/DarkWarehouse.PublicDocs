@@ -1,9 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Pallets
 
 ## What a Pallet Is
-
-## Products on Pallets

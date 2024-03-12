@@ -1,11 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Products
 
-## Pallet Definitions
-
-## What a Pallet Is
-
-## Products on Pallets
+## Mapping a Product to a Pallet
