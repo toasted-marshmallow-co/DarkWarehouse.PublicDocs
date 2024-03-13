@@ -17,6 +17,10 @@ const config: Config = {
     msalTenantId: process.env.REACT_APP_MSAL_TENANT_ID as string,
     msalSecretId: process.env.REACT_APP_MSAL_SECRET_ID as string,
     msalSecretValue: process.env.REACT_APP_MSAL_SECRET_VALUE as string,
+    // msalRedirectUri:
+    //   process.env.NODE_ENV === "production"
+    //     ? (process.env.REACT_APP_MSAL_REDIRECT_URI_PRODUCTION as string)
+    //     : (process.env.REACT_APP_MSAL_REDIRECT_URI_DEVELOPMENT as string),
     msalRedirectUri: process.env.REACT_APP_MSAL_REDIRECT_URI_PRODUCTION as string,
   },
 
