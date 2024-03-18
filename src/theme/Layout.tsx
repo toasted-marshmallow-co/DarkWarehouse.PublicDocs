@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AuthenticatedTemplate, UnauthenticatedTemplate, useAccount, useMsal } from "@azure/msal-react";
-import { SignInButton } from "../components/ui-components/SignInButton";
 import useMsalAuth from "../hooks/useMsalAuth";
+import Login from "../components/ui-components/Login";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { customFields } = useMsalAuth();
@@ -40,10 +40,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <AuthenticatedTemplate>{children}</AuthenticatedTemplate>
       ) : (
         <UnauthenticatedTemplate>
-          <div className="flex items-center justify-center min-h-screen gap-4 min-w-screen ">
-            <p>Access Denied or No users are signed in!</p>
-            <SignInButton />
-          </div>
+          <Login />
         </UnauthenticatedTemplate>
       )}
     </React.Fragment>

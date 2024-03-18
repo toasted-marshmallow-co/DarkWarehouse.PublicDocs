@@ -1,5 +1,6 @@
 import { useMsal } from "@azure/msal-react";
 import useMsalAuth from "../../hooks/useMsalAuth";
+import { MoveRight } from "lucide-react";
 
 export const SignInButton = () => {
   const { instance } = useMsal();
@@ -10,13 +11,12 @@ export const SignInButton = () => {
   };
 
   return (
-    <div className="relative inline-block text-left">
-      <button
-        onClick={() => handleLogin()}
-        className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-      >
-        Login
-      </button>
-    </div>
+    <button
+      onClick={() => handleLogin()}
+      className="inline-flex items-center justify-center w-full px-4 py-3 text-lg font-bold tracking-wider text-white uppercase bg-blue-400 border border-blue-500 rounded-md shadow-sm cursor-pointer hover:bg-blue-400/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-100 focus:ring-blue-700"
+    >
+      Login
+      <MoveRight className="ml-2 size-4" />
+    </button>
   );
 };

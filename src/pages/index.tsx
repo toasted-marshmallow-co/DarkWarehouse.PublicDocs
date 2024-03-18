@@ -10,7 +10,6 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    // <header className={clsx("hero hero--primary", styles.heroBanner)}>
     <header className={clsx("hero", "bg-neutral-100  dark:bg-neutral-900", styles.heroBanner)}>
       <div className="container py-12">
         <Heading as="h1" className="hero__title text-neutral-800 dark:text-neutral-200">
@@ -19,8 +18,7 @@ function HomepageHeader() {
         <p className="hero__subtitle text-neutral-700 dark:text-neutral-400 ">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            // className="button button--secondary button--lg"
-            className="px-4 py-2 font-bold text-white bg-blue-500 rounded-md hover:no-underline hover:bg-blue-600 hover:text-white"
+            className="px-4 py-2 font-bold text-white bg-blue-400 rounded-md hover:no-underline hover:bg-blue-400/90 hover:text-white"
             to="/docs/Introduction"
           >
             Dark Warehouse Docs ⏱️
@@ -34,7 +32,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+    <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
