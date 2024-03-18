@@ -12,7 +12,9 @@ export default function Login() {
           <div className="pb-4 text-lg text-center text-stone-400">
             Sign in to access the <span className="font-bold ">Dark Warehouse</span> documentation.
           </div>
-          <SignInButton />
+          <div className="flex w-full">
+            <SignInButton />
+          </div>
         </div>
       </div>
     </div>

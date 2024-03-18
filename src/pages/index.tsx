@@ -68,15 +68,20 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      {isAuthorized ? (
-        <>
-          <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
-            <HomepageHeader />
-            <main>
-              <HomepageFeatures />
-            </main>
-          </Layout>
-        </>
+      {customFields.enableAuth == "false" ? (
+        <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
+          <HomepageHeader />
+          <main>
+            <HomepageFeatures />
+          </main>
+        </Layout>
+      ) : isAuthorized ? (
+        <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
+          <HomepageHeader />
+          <main>
+            <HomepageFeatures />
+          </main>
+        </Layout>
       ) : (
         <Login />
       )}
