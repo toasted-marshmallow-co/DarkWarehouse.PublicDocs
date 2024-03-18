@@ -34,7 +34,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <React.Fragment>
-      {isAuthorized ? (
+      {customFields.enableAuth == "false" ? (
+        <>{children}</>
+      ) : isAuthorized ? (
         <AuthenticatedTemplate>{children}</AuthenticatedTemplate>
       ) : (
         <UnauthenticatedTemplate>
