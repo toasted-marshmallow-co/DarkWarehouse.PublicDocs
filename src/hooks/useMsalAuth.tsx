@@ -1,5 +1,6 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { Configuration, PublicClientApplication, LogLevel, PopupRequest } from "@azure/msal-browser";
+import { useMemo } from "react";
 
 /**
  * Custom hook for using MSAL authentication in a React component.
@@ -51,7 +52,7 @@ export default function useMsalAuth() {
     },
   };
 
-  const msalInstance = new PublicClientApplication(msalConfig);
+  const msalInstance = useMemo(() => new PublicClientApplication(msalConfig), []);
 
   // Add here scopes for id token to be used at MS Identity Platform endpoints.
   const loginRequest: PopupRequest = {
