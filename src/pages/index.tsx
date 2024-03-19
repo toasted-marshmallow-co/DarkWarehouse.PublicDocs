@@ -9,9 +9,9 @@ import {} from "@docusaurus/router";
 
 import styles from "./index.module.css";
 import useMsalAuth from "../hooks/useMsalAuth";
-import { useAccount, useMsal } from "@azure/msal-react";
-import { useEffect, useState } from "react";
-import Login from "../components/ui-components/Login";
+import { AuthenticatedTemplate, UnauthenticatedTemplate, useAccount, useMsal } from "@azure/msal-react";
+import { Fragment, useEffect, useState } from "react";
+import Login from "../components/ui-components/SignInComponent";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -37,7 +37,6 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-
   const { customFields } = useMsalAuth();
 
   const { accounts } = useMsal();
@@ -68,23 +67,25 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      {customFields.enableAuth == "false" ? (
-        <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
-          <HomepageHeader />
-          <main>
-            <HomepageFeatures />
-          </main>
-        </Layout>
-      ) : isAuthorized ? (
-        <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
-          <HomepageHeader />
-          <main>
-            <HomepageFeatures />
-          </main>
-        </Layout>
-      ) : (
-        <Login />
-      )}
+      <Fragment>
+        {customFields.enableAuth == "false" ? (
+          <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
+            <HomepageHeader />
+            <main>
+              <HomepageFeatures />
+            </main>
+          </Layout>
+        ) : isAuthorized ? (
+          <Layout title={`${siteConfig.title}`} description="Dark Warehouse Docs">
+            <HomepageHeader />
+            <main>
+              <HomepageFeatures />
+            </main>
+          </Layout>
+        ) : (
+          <Login />
+        )}
+      </Fragment>
     </>
   );
 }

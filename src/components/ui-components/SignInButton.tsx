@@ -1,13 +1,25 @@
-import { useMsal } from "@azure/msal-react";
-import useMsalAuth from "../../hooks/useMsalAuth";
 import { MoveRight } from "lucide-react";
+import { useMsal } from "@azure/msal-react";
+import { InteractionStatus, PopupRequest } from "@azure/msal-browser";
+import { useHistory } from "@docusaurus/router";
 
 export const SignInButton = () => {
-  const { instance } = useMsal();
-  const { loginRequest } = useMsalAuth();
+  const { instance, inProgress } = useMsal();
+  const history = useHistory();
 
-  const handleLogin = () => {
-    instance.loginPopup(loginRequest);
+  const loginRequest: PopupRequest = {
+    scopes: ["User.Read"],
+  };
+
+  const handleLogin = async () => {
+    try {
+      const loginResponse = await instance.loginPopup(loginRequest);
+      if (loginResponse.account && loginResponse.account.idToken && inProgress === InteractionStatus.None) {
+        history.push("/");
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

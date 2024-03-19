@@ -2,7 +2,7 @@ import React from "react";
 import { SignInButton } from "./SignInButton";
 import { CircleUser } from "lucide-react";
 
-export default function Login() {
+export default function SignInComponent() {
   return (
     <div className="flex items-center justify-center min-h-screen gap-4 min-w-screen bg-stone-900">
       <div className="flex flex-col items-center w-full max-w-md gap-6 p-8 pt-10 rounded-lg ring-1 ring-stone-700">
