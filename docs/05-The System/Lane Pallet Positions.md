@@ -42,6 +42,6 @@ When it comes to figuring out where each pallet sits within a storage lane, we'v
 If an Omni-Mole travels forwards in the lane, it travels from 1 to N. Likewise, if an Omni-Mole travels backwards in the lane it travels from position N to 1.
 
 :::note
-Directionality within the system is discussed further in the [the Machine Basic Concepts section](../06-The%20Equipment/Machine%20Basic%20Concepts.md), which is discussed a bit later. 
+Directionality within the system is discussed further in the section 6 - The Equipment. 
 :::
 
