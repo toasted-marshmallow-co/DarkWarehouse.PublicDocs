@@ -8,7 +8,11 @@ export default function AccessRequest() {
         <div className="flex flex-col items-center w-full gap-2">
           <h1 className="text-4xl font-semibold text-center text-stone-200">No Access</h1>
           <div className="pb-4 text-lg text-center text-stone-400">
-            You do not have access to view this page, please contact <span className="font-bold ">info@toastedmarshmallow.co</span> to request access.
+            You do not have access to view this page, please contact{" "}
+            <a href="mailto:info@toastedmarshmallow.co" className="font-bold">
+              info@toastedmarshmallow.co
+            </a>{" "}
+            to request access.
           </div>
         </div>
       </div>
