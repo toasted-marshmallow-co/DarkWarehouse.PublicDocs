@@ -49,11 +49,11 @@ For the application to function correctly in your local development environment,
 3. **Configure the Variables**: Replace the placeholder values in your `.env` file with the actual values corresponding to your development setup. Below is an explanation of each environment variable:
 
    - 🏢 `REACT_APP_ADMIN_DOMAINS`: A comma-separated string listing the admin domains with access permissions.
-     Format: "@domain1.com,@domain2.com"
+     Format: "domain1.com,domain2.com"
    - 📧 `REACT_APP_EXTERNAL_ACCESS_EMAILS`: A comma-separated string listing the emails granted external access.
      Format: "user1@domain.com,user2@domain.com"
    - 🌐 `REACT_APP_EXTERNAL_ACCESS_DOMAINS`: A comma-separated string listing the domains granted external access.
-     Format: "@domain1.com,@domain2.com"
+     Format: "domain1.com,domain2.com"
    - 🔑 `REACT_APP_MSAL_CLIENT_ID`: Our application's Client ID for Microsoft Authentication Library (MSAL).
    - 🏢 `REACT_APP_MSAL_TENANT_ID`: Our Azure Active Directory Tenant ID.
    - 🆔 `REACT_APP_MSAL_SECRET_ID`: The Secret ID for our MSAL application, required if using a confidential client.

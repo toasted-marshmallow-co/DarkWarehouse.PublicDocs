@@ -29,7 +29,7 @@ export function AuthCheck({ children }: { children: React.ReactNode }) {
 
       // Check if the user's email domain is in the allowed domains list
       const userDomain = userEmail.split("@")[1];
-      if (adminDomains.includes(`@${userDomain}`) || externalAccessDomains.includes(`@${userDomain}`)) return true;
+      if (adminDomains.includes(`${userDomain}`) || externalAccessDomains.includes(`${userDomain}`)) return true;
 
       return false;
     };
