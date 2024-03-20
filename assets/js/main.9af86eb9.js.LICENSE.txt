@@ -1,6 +1,12 @@
 /* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
  * @license MIT */
 
+/*! @azure/msal-browser v3.10.0 2024-02-17 */
+
+/*! @azure/msal-common v14.7.1 2024-02-17 */
+
+/*! @azure/msal-react v2.0.12 2024-02-17 */
+
 /*! Bundled license information:
 
 prismjs/prism.js:
@@ -52,6 +58,13 @@ prismjs/prism.js:
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license lucide-react v0.358.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
  */
 
 /** @license React v16.13.1

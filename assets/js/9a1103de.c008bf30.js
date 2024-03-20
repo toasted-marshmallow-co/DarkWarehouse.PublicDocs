@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdark_warehouse_public_docs=self.webpackChunkdark_warehouse_public_docs||[]).push([[2528],{77131:(e,u,s)=>{s.r(u),s.d(u,{default:()=>c});var r=s(18537),a=s(85893);function c(){return(0,a.jsx)(r.Z,{})}}}]);
