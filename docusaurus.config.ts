@@ -1,11 +1,29 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+// import "dotenv/config";
+require("dotenv").config();
 
 const config: Config = {
   title: "Dark Warehouse",
   tagline: "Intelligent software for efficiently managing traffic in an Omni-Mole warehouse.",
   favicon: "img/favicon.ico",
+
+  customFields: {
+    adminDomains: process.env.REACT_APP_ADMIN_DOMAINS as string,
+    externalAccessEmails: process.env.REACT_APP_EXTERNAL_ACCESS_EMAILS as string,
+    externalAccessDomains: process.env.REACT_APP_EXTERNAL_ACCESS_DOMAINS as string,
+    msalClientId: process.env.REACT_APP_MSAL_CLIENT_ID as string,
+    msalTenantId: process.env.REACT_APP_MSAL_TENANT_ID as string,
+    msalSecretId: process.env.REACT_APP_MSAL_SECRET_ID as string,
+    msalSecretValue: process.env.REACT_APP_MSAL_SECRET_VALUE as string,
+    enableAuth: process.env.REACT_APP_ENABLE_AUTH as string,
+    testLocally: process.env.REACT_APP_TEST_LOCALLY as string,
+    msalRedirectUri:
+      (process.env.REACT_APP_TEST_LOCALLY as string) === "true"
+        ? (process.env.REACT_APP_MSAL_REDIRECT_URI_DEVELOPMENT as string)
+        : (process.env.REACT_APP_MSAL_REDIRECT_URI_PRODUCTION as string),
+  },
 
   // Set the production url of your site here
   url: "https://docs.darkwarehouse.io",
@@ -22,13 +40,13 @@ const config: Config = {
   onBrokenMarkdownLinks: "warn",
 
   // Add static directories
-  staticDirectories: ['static'],
-  
+  staticDirectories: ["static"],
+
   // Add Mermaid diagrams
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
