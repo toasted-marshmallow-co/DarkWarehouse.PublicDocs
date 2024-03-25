@@ -65,17 +65,26 @@ Simply right-click the Omni-Mole and send it to the nearest available location �
 
 ![send to nearest available location](assets/interacting-with-chargers/send-to-nearest-available-location.png "send to nearest available location")
 
-## Settings For Machine Charging 🎛️
+## Understanding SoC % Settings
+:::note 
+**SoC %** represents the **State of Charge Percentage** of the battery, similar to how a mobile phone displays battery percentage. The **SoC %** indicates the battery level for Omni-Moles, providing users with valuable information about the Omni-Mole's charge status🔔.
+:::
+
+- The initial four settings—**Must Go To Charger SoC %**, **Can Go To Charger SoC %**, **Can Leave Charger SoC %**, and **Full Cycle Cutoff SoC %**—are tailored to daily charging needs. These settings act as a notifying bell, indicating to users when machines should initiate charging and when they should depart from chargers🛎️.
+
+- The subsequent two settings—**Perform Full Charge Cycle Interval Min** & **Perform Full Charge Cycle Interval Max**—are essential for ensuring the battery undergoes a complete charge cycle periodically. This practice helps extend the battery's operational lifespan🔋.
+
+### Settings For Machine Charging 🎛️
 
 The system offers customizable charge settings that allow users to define the parameters for the Omni-Mole battery🎚️. These settings supply users with information in knowing at what state all Omni-Moles are in and they include:
 
-- **Must Go To Charger**: represents the critical state-of-charge percentage threshold at which an Omni-Mole must immediately proceed to a charge pad. At this threshold, the Omni-Mole will halt any further pallet movement tasks and the system will prioritize urgently routing it to a charge pad🚨.
+- **Must Go To Charger SoC %**: Represents the critical state-of-charge percentage threshold at which an Omni-Mole must immediately proceed to a charge pad. At this threshold, the Omni-Mole will halt any further pallet movement tasks and the system will prioritize urgently routing it to a charge pad🚨.
 
-- **Can Go To Charger**: If an Omni-Mole reports a charge percentage value of 40% or lower, indicates that the Omni-Mole is is permitted to proceed to a charge pad. At this threshold, the Omni-Mole has the option to initiate charging but is not obliged to do so immediately⚠️.
+- **Can Go To Charger SoC %**: If an Omni-Mole reports a charge percentage value that is equal to or lower than this threshold, it indicates that the Omni-Mole is is permitted to proceed to a charge pad. At this threshold, the Omni-Mole has the option to initiate charging but is not obliged to do so immediately⚠️.
 
-- **Can Leave Charger**: alerts users that the Omni-Mole is allowed to disconnect from the charger. At this level, the Omni-Mole has obtained sufficient charge and may resume its tasks✔️.
+- **Can Leave Charger SoC %**: Alerts users that the Omni-Mole is allowed to disconnect from the charger. At this level, the Omni-Mole has obtained sufficient charge and may resume its tasks✔️.
 
-- **Full Cycle Cutoff**: an Omni-Mole is permitted to disconnect from the charger after completing a full charging cycle. This ensures that the battery has been fully replenished before resuming operations.🔋.
+- **Full Cycle Cutoff SoC %**: An Omni-Mole is permitted to disconnect from the charger after completing a full charging cycle. This ensures that the battery has been fully replenished before resuming operations.🔋.
 
 - **Perform Full Charge Cycle Interval Min**: This is represents the minimum number of **days** in which a single Omni-Mole must go from a critically low battery state of charge to a full state of charge⏳.
 
