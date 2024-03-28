@@ -50,19 +50,19 @@ Select and right-click the conveyor which requires a status check. Navigate and 
 
 ## Reset Conveyors Errors
 
-To reproduce the errors on the conveyor, the user can then use the `Reset Errors` method found in the conveyor by right-clicking on the conveyor. Navigate to the expanded options and click `Reset Errors` to complete the reset♻️.
+To clear the errors on the conveyor, the user can then use the `Reset Errors` method found in the conveyor by right-clicking on the conveyor. Navigate to the expanded options and click `Reset Errors` to complete the reset♻️.
 
 ![reset errors](assets/working-with-conveyors/reset-errors.png "reset errors")
 
 ## Reset Conveyor Runtime Parameters
 
-The user can also `Reset Runtime Parameters` function by right-clicking on the conveyor and click on the `Reset Runtime Parameters` option 👨‍💻.
+The user can also `Reset Runtime Parameters` function by right-clicking on the conveyor and click on the `Reset Runtime Parameters` option 👨‍💻. Which will remove all runtime parameters.
 
 ![reset runtime parameters](assets/working-with-conveyors/reset-runtime-parameters.png "reset runtime parameters")
 
 ## Reset Conveyor Interlocks 🔒
 
-To `Reset Interlocks`, is to restore the interlock tasks that have been created in order to complete them. This is easily done by right-clicking the conveyor, navigate and click on the `Reset Interlocks` option🔗.
+To `Reset Interlocks`, is to clear the interlock tasks that have been created. This is easily done by right-clicking the conveyor, navigate and click on the `Reset Interlocks` option🔗.
 
 ![reset interlocks](assets/working-with-conveyors/pallet-placement-location.png "reset interlocks")
 
