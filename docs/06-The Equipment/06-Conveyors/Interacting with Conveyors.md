@@ -56,19 +56,19 @@ To reproduce the errors on the conveyor, the user can then use the `Reset Errors
 
 ## Reset Conveyor Runtime Parameters
 
-The user can also `Reset Runtime Parameters` function by right-clicking on the conveyor and click on the `Reset Runtime Parameters` option.
+The user can also `Reset Runtime Parameters` function by right-clicking on the conveyor and click on the `Reset Runtime Parameters` option 👨‍💻.
 
 ![reset runtime parameters](assets/working-with-conveyors/reset-runtime-parameters.png "reset runtime parameters")
 
-## Reset Conveyor Interlocks
+## Reset Conveyor Interlocks 🔒
 
-To `Reset Interlocks`, is to restore the interlock tasks that have been created in order to complete them. This is easily done by right-clicking the conveyor, navigate and click on the `Reset Interlocks` option.
+To `Reset Interlocks`, is to restore the interlock tasks that have been created in order to complete them. This is easily done by right-clicking the conveyor, navigate and click on the `Reset Interlocks` option🔗.
 
 ![reset interlocks](assets/working-with-conveyors/pallet-placement-location.png "reset interlocks")
 
-## Changing Conveyor Auto\Manual Settings
+## Changing Conveyor Auto\Manual Settings ⚙️
 
-This allows the machine to either be manually controlled or set to automatically operated. These two options can be toggled by right-clicking on the conveyor and switch the control settings found on the expanded options.
+This allows the machine to either be manually controlled or set to automatically operated. These two options can be toggled by right-clicking on the conveyor and switch the control settings found on the expanded options🎯.
 
 ![change auto manual settings](assets/working-with-conveyors/change-auto-manual-settings.png "change auto manual settings")
 
@@ -89,6 +89,12 @@ The Rejection Types categorize the reasons why a pallet is not accepted into the
 ## Conveyor Rejection Station 🚨
 
  This is where rejected pallets are directed within the conveyor system, facilitating their removal from the main line for further handling or inspection📋. This station functions as a pivotal point for handling rejected pallets, ensuring they are appropriately diverted from the main conveyor line.
+
+:::note 
+Pallet rejection commonly occurs during the inbound process but is not exclusive to it. It involves identifying compatibility issues and subsequently refusing to accept the pallet on the conveyor line⚠️.
+
+Additionally, when the rejection station is full, the conveyor must hold any further rejected pallets until the station becomes available again✋.
+:::
 
 ![conveyor rejection station](assets/working-with-conveyors/conveyor-rejection-station.png "conveyor rejection station")
 
