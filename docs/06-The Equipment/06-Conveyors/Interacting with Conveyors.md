@@ -20,6 +20,10 @@ The user can select the conveyor which they would like to create a task for and 
 
 Creating a Pallet Task is a basic function that can be performed by users supplying the system with information that will help identify and describe the pallet📦. The following is the information required in order to create a pallet task.
 
+:::note
+Once a pallet has been created, users can perform a `Pallet Task` by right-clicking on the created pallet and expand the `Pallet` options then click on [Create Pallet Task](/docs/07-Pallets/Creating%20And%20Moving%20Pallets.md)✨.
+:::
+
 #### Provide Pallet Barcode
 
 Users can then provide the pallet barcode, which will also be used to identity the pallet within the Darkwarehouse system📛. Once this field has been provided the user can then proceed.
@@ -80,7 +84,7 @@ To clear the errors on the conveyor, the user can then use the `Reset Errors` me
 
 ## Reset Conveyor Interlocks 🔒
 
-To `Reset Interlocks`, is to clear the interlock tasks that have been created. This is easily done by right-clicking the conveyor, navigate and click on the `Reset Interlocks` option🔗.
+To [Reset Interlock](../Interlocks), is to clear the interlock tasks that have been created. This is easily done by right-clicking the conveyor, navigate and click on the [Reset Interlock](../Interlocks) option🔗.
 
 ![reset interlocks](assets/working-with-conveyors/pallet-placement-location.png "reset interlocks")
 
