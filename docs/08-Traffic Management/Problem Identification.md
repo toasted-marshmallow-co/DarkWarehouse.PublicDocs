@@ -12,14 +12,19 @@ Users are encouraged to regularly check notifications and understand them. The f
 
 ## Network Issues
 
-**Description** : This is an issue that may affect all communication channels between the Whisker and the Dark Warehouse TMS, as well as between the Dark Warehouse TMS/WMS and SQL, or all communication between the Data Bridge and the client WMS📶.
+**Description** : It's important to note that this issue impacts all TCP/IP or WiFi connections. This may also affect all communication channels between the systems, these systems are listed below📶:
+- Whisker / Dark Warehouse API
+- Dark Warehouse API / Microsoft SQL
+- Data Bridge / Dark Warehouse API
+- Dark Warehouse API / Dark Warehouse UI
+- Client WMS / Data Bridge
 
-**Identification** : This may be indicated through the system displaying possible Network Issues or unable to properly connect and communicate with the system.
+**Identification** : This may be indicated through the system displaying possible Network Issues or unable to properly connect and communicate with the system. 
 
-**Possible Resolution** : Users can alert our Developers in order to investigate and the reset Dark Warehouse network systems.
+**Possible Resolution** : Users can alert our Developers in order to investigate and then reset the Dark Warehouse network systems.
 
 ## Inaccurate Data Request
-
+<!-- TODO : Need to link this to screenshots of the Data Bridge / WMS. -->
 **Description** : Generally, this pertains to requests for stock items that are not present in the inventory, or the transmission of improperly formatted messages📧.
 
 **Identification** : This can be identified by users monitoring the system to evaluate if the sent data request to the system is not being responded to.
@@ -28,7 +33,7 @@ Users are encouraged to regularly check notifications and understand them. The f
 
 ## Deadlock Situations
 
-**Description** : Deadlock scenarios occur when a mole encounters a routing issue that prevents it from completing a task.
+**Description** : Deadlock scenarios occur when a mole encounters a routing issue that prevents it from completing a task. Deadlocks typically arise when multiple machines on a single level contend for the same pallets or storage space.
 
 **Identification** : Deadlock scenarios are rare occurrences and can be difficult to diagnose🔍. One indication of a deadlock is when a mole fails to perform a task for an extended period despite being online and having a clear route available.
 
@@ -52,7 +57,7 @@ Users are encouraged to regularly check notifications and understand them. The f
 
 ## Unresponsive Whisker (no Communication with TMS)
 
-**Description** : This occurs when the Whisker does not communicate with the Darkwarehouse System🔇.
+**Description** : This occurs when the Whisker does not communicate with the Dark Warehouse System🔇.Additionally, connectivity with SQL, the UI, and the Data Bridge should remain operational. This narrows down the issue to a lack of communication between the whisker and the Dark Warehouse System.
 
 **Identification** : It can be identified when a `Live Status Request` has been performed and no response is given back to the system📡.
 
