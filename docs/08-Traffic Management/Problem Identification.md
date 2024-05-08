@@ -47,6 +47,14 @@ Users are encouraged to regularly check notifications and understand them. The f
 
 **Possible Resolution** : If the issue persists and the machine has not executed the assigned task even after have accepted the task, user can possibly cancel and recreate\retry the task🔁.
 
+## Machines Not Receiving RF Communication
+
+**Description** : This occurs when there's a breakdown in the transmission of data to machines, while the Whisker still receives communication.
+
+**Identificatin** : While the whisker successfully receives instructions from the Dark Warehouse and transmits them, if the machines do not receive any instructions, it indicates a potential issue with the RF communication between the whisker and the machines.
+
+**Possible Resolution** : Users can alert our Developers in order to investigate and then reset the Dark Warehouse network systems.
+
 ## Unresponsive Machine (no Task Complete respones)
 
 **Description** : In certain situations, machines may finish a task without reporting its completion, causing the Dark Warehouse system to remain unaware of the task's status and still consider it active rather than completed.
